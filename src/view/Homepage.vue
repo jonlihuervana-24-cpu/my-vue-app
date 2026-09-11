@@ -222,6 +222,7 @@ p {
 @media (max-width: 850px) {
   .hero-card {
     grid-template-columns: 1fr;
+    padding: 28px 24px;
   }
   
   .stats-grid {
@@ -230,6 +231,39 @@ p {
 }
 
 @media (max-width: 480px) {
+  .streetwear-portal {
+    margin: 20px auto;
+    padding: 0 14px;
+  }
+
+  .hero-card {
+    gap: 24px;
+    padding: 24px 18px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 11vw, 2.6rem);
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .action-buttons {
+    gap: 10px;
+  }
+
+  .btn-main,
+  .btn-sub {
+    width: 100%;
+    padding: 13px 16px;
+  }
+
+  .brand-badge {
+    padding: 30px 16px;
+  }
+
   .stats-grid {
     grid-template-columns: 1fr;
   }

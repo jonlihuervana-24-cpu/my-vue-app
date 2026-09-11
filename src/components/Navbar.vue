@@ -79,9 +79,10 @@ nav ul {
   gap: 26px;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
-  .nav-right {
+.nav-right {
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -121,5 +122,51 @@ nav a.active::after {
   background-color: #ec3030;
 }
 
+@media (max-width: 700px) {
+  nav {
+    align-items: flex-start;
+    padding: 14px 16px;
+  }
+
+  .brand {
+    gap: 0.7rem;
+  }
+
+  .Logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .brand-tagLine {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 16px;
+  }
+
+  nav a {
+    display: block;
+    font-size: 0.9rem;
+  }
+
+  .portal-btn button {
+    width: 100%;
+  }
+}
 
 </style>
