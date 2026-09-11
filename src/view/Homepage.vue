@@ -99,6 +99,8 @@ h1 {
   line-height: 1.1;
   margin: 0 0 15px 0;
   text-transform: uppercase;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .highlight {
@@ -116,6 +118,7 @@ p {
 .action-buttons {
   display: flex;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .btn-main {
@@ -180,6 +183,8 @@ p {
   font-weight: 800;
   color: #ffffff;
   margin: 0 0 8px 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .slogan {
@@ -243,7 +248,7 @@ p {
   }
 
   h1 {
-    font-size: clamp(2rem, 11vw, 2.6rem);
+    font-size: clamp(1.5rem, 8vw, 2.2rem);
   }
 
   p {
@@ -252,6 +257,7 @@ p {
 
   .action-buttons {
     gap: 10px;
+    flex-direction: column;
   }
 
   .btn-main,
@@ -264,12 +270,12 @@ p {
     padding: 30px 16px;
   }
 
+  .brand-badge h2 {
+    font-size: 18px;
+  }
+
   .stats-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .action-buttons {
-    flex-direction: column;
   }
 }
 </style>
